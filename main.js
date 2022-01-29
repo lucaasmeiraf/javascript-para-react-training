@@ -4,10 +4,11 @@ import "./src/styles/elements/base.css";
 
 // Import do CardGame para acessar seu conteudo index.js que contem um html
 import CardGame from "./src/components/CardGame";
+import BoardGame from "./src/objects/BoardGame/indesx";
 
 const $root = document.querySelector("#root");
 // Atribui o conteudo(HTML) q esta em CardGame,
 // executando a func pelo nome do import
-const $htmlCardGame = CardGame();
+const $htmlBoardGame = BoardGame(6);
 
-$root.insertAdjacentHTML("beforeend", $htmlCardGame); 
+$root.insertAdjacentHTML("beforeend", $htmlBoardGame); 
