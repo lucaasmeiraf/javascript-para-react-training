@@ -4,7 +4,8 @@ import "./src/styles/elements/base.css";
 
 // Import do CardGame para acessar seu conteudo index.js que contem um html
 import BoardGame from "./src/objects/BoardGame";
-import PlayerName from "./src/components/PlayerName";
+import ScoreBoard from "./src/objects/ScoreBoard";
+
 
 const $root = document.querySelector("#root");
 // Atribui o conteudo(HTML) q esta em CardGame,
@@ -12,8 +13,7 @@ const $root = document.querySelector("#root");
 $root.insertAdjacentHTML(
     "beforeend",
      `
-     ${PlayerName('Player1')}
-     ${PlayerName('Player2')}
+     ${ScoreBoard()}
      ${BoardGame(6)}
      `
     ); 
