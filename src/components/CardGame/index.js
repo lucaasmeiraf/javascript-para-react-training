@@ -2,10 +2,10 @@ import './style.css';
 
 // JSX ` `
 // Componente JavaScript puro
-function CardGame(){
+function CardGame(icon="alura-pixel", alt="Logo da Alura"){
     return /*html*/`
         <article class="card-game">
-        <img src="images/alura-pixel.png" alr ="Logo da Alura">
+        <img src="images/${icon}.svg" alt ="${alt}">
         </article>
     `
 }
