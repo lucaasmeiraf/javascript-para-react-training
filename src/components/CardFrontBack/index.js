@@ -7,13 +7,13 @@ function CardFrontBack(icon, altIcon){
     window.cardFrontBack.handleClick = (event) => {
         const $origin = event.target;
         const $cardFrontBack = $origin.closest('.card-front-back');
-
+        console.log(event.target);
         $cardFrontBack.classList.toggle('-active');
 
     }
 
     return /*html*/`
-    <article class="card-front-back" onClick="cardFrontBack.handleClick(event)">
+    <article class="card-front-back" data-icon=${icon} onClick="cardFrontBack.handleClick(event)">
         <div class="card -front">
         ${CardGame()}
         </div>

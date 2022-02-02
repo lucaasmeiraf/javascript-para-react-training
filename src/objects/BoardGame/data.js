@@ -7,6 +7,7 @@ const cards = [{
     altIcon: "Logo do html"
 },
 {
+    
     icon: "javascript",
     altIcon: "Logo do javascript"
 },
